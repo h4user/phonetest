@@ -18,7 +18,7 @@ function getLocation() {
    }
 }
 function weather_search(){
-	fetch(`http://api.weatherapi.com/v1/forecast.json?key=5201affb726d495a85e161806252006&q=${getLocation()}&days=8&aqi=no&alerts=no`)
+	fetch(`https://api.weatherapi.com/v1/forecast.json?key=5201affb726d495a85e161806252006&q=${getLocation()}&days=8&aqi=no&alerts=no`)
 	.then(async function(respons){
 		if(respons.status == 200) {
 		let data = await respons.json()
