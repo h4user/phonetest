@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+<div class="switch_holder">
+      <button id="show_week" onclick="phoneWeek()"><i class="fa-solid fa-calendar-week"></i></button>
+      <button id="show_stats" onclick="phoneStats()"><i class="fa-solid fa-chart-simple"></i></button>
+      <button id="show_stats" onclick="phoneLoc()"><i class="fa fa-globe" aria-hidden="true"></i></button>
+</div>
+<div class="main">
+  <div id="block_today">
+    <div class="search_bar_block">
+      <button type="button" id="search_b" onclick="weather_search()"><i class="fa-solid fa-magnifying-glass-location"></i></button><input id="search_bar" type="text" name="search_bar" placeholder="Search for places...">
+    </div>
+    <div id="td_wrap"></div>
+  </div>
+
+
+  <div class="block_weeknstats" id="block_weeknstats">
+     <h2 id="week-text">Week</h2>
+     <div id="weekdays">
+
+     </div>
+     <h3 id="TH-text">Today's Highlights</h3>
+     <div class="block_stats" id="block_stats">
+       <div id="UV_index"></div>
+       <div id="wind_status"></div>
+       <div id="sunrise_sunset"></div>
+       <div id="humidity"></div>
+       <div id="visibility"></div>
+       <div id="pressure"></div>
+     </div>
+  </div>
+</div>
+
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/86bcffa1fa.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

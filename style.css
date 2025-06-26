@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url("https://www.onlygfx.com/wp-content/uploads/2021/07/cartoon-cloud-sky-background-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  width: 1300px;
+  height: 640px;
+  margin: auto;
+  margin-top: 46px;
+  border-radius: 40px;
+  background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+}
+#block_today{
+  width: 330px;
+  height: 595px;
+  padding: 30px 0px 0px 45px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background-color: #FFFFFF;
+}
+.search_bar_block{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 283px
+}
+#search_b {
+  margin-top: -2px;
+  width: 23px;
+  height: 23px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  background-color: #FFFFFF;
+  font-size: 22px;
+
+}
+#search_bar{
+  margin-left: 12px;
+  width: 257px;
+  height: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+}
+#block_today img{
+  width: 260px;
+  image-rendering: auto;
+        filter: drop-shadow(0 0 4px rgba(0, 0, 0, 1)) contrast(110%) brightness(105%) blur(2px);
+   user-select: none;
+      -drag: none;
+     -moz-user-select: none;
+    -webkit-user-drag: none;
+   -webkit-user-select: none;
+}
+#block_today h1{
+  margin-top: 10px;
+  font-weight: unset;
+  font-size: 75px;
+}
+#block_today p{
+  margin-top: 10px;
+}
+hr{
+  width: 278px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.block_weeknstats{
+  width: 970px;
+  height: 600px;
+  padding: 20px 45px 20px 45px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #f2f2f2;
+}
+.block_weeknstats h2{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  font-size: 20px;
+}
+#weekdays{
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  height: 125px;
+}
+.weekdays_divs{
+  padding: 10px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #FFFFFFFF;
+  border-radius: 20px;
+  height: 105px;
+  font-size: 18px;
+}
+.weekdays_divs img{
+  user-select: none;
+      -drag: none;
+     -moz-user-select: none;
+    -webkit-user-drag: none;
+   -webkit-user-select: none;
+}
+.block_weeknstats h3{
+  margin-top: 36px;
+  font-size: 20px;
+}
+.block_stats{
+  margin-top: -9px;
+  display: grid;
+  padding-top: 35px;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  grid-auto-rows: 1.5fr 1.5fr 1.5fr;
+  grid-gap: 35px;
+  height: 324px;
+}
+.block_stats div{
+  padding: 12px 12px 12px 12px;
+  background-color: #FFFFFF;
+  border-radius: 14px;
+}
+
+
+.uv-range {
+  width: 90%;
+  margin: 10px auto 0 auto;
+  display: block;
+  -webkit-appearance: none;
+  height: 10px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #e0e0e0 0%, #a6a6a6 50%, #2c3e50 100%);
+  outline: none;
+  opacity: 0.95;
+  pointer-events: none;
+  transition: background 0.3s ease;
+}
+
+.uv-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #4b4b4b;
+  border: 2px solid white;
+  margin-top: -3px;
+  cursor: default;
+}
+
+.uv-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #4b4b4b;
+  border: 2px solid white;
+  cursor: default;
+}
+.switch_holder{
+  display: none;
+}
+.switch_holder button{
+  margin-left: 10px;
+  width: 52%;
+  height: 4vh;
+  padding-top: 2%;
+  background-color: #000000;
+  color: #FFFFFF;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 700px) {
+  body{
+      height: 87.7vh;
+    }
+    .main{
+      margin-top: 26.5%;
+      flex-direction: column;
+      width: 92%;
+      height: 75vh;
+      justify-content: center;
+    }
+    #block_today{
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      height: 95vh;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      padding-bottom: 15px;
+    }
+    .block_weeknstats{
+      display: none;
+      width: auto;
+      height: 86vh;
+      padding: 20px 21px 20px 16px;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+      background-color: #FFFFFF;
+    }
+    .block_stats{
+      margin-top: -35px;
+      grid-template-columns: 1.5fr;
+      height: auto;
+      grid-gap: 0px;
+    }
+    .block_stats div{
+      padding: 0px;
+    }
+    .search_bar_block{
+      width: 235px;
+    }
+    #search_bar{
+       width: 235px;
+    }
+    .switch_holder{
+    position: fixed;
+    left: 62%;
+    bottom: 94%;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-end;
+    }
+    #weekdays{
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    height: fit-content;
+  }
+  .weekdays_divs{
+    width: 92%;
+    padding: 10px 8px;
+    display: flex;
+    background-color: #f2f2f2;
+    height: fit-content;
+  }
+  .block_weeknstats h3 {
+    margin-top: 0px;
+    font-size: 20px;
+}
+}
